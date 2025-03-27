@@ -5,28 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bot360 - Términos y Privacidad</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
       font-family: Arial, sans-serif;
-      margin: 2rem;
+      margin: 0;
+      padding: 0;
       line-height: 1.6;
-      background-color: #f9f9f9;
+      background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
       color: #333;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
     }
     h1, h2 {
       color: #2c3e50;
     }
     nav {
-      background-color: #eaeaea;
+      background-color: #ffffffcc;
       padding: 1rem;
-      margin-bottom: 2rem;
-      border-radius: 10px;
+      border-bottom: 1px solid #ccc;
       text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      backdrop-filter: blur(10px);
     }
     nav a {
       margin: 0 1rem;
       text-decoration: none;
       color: #2c3e50;
       font-weight: bold;
+      font-size: 1rem;
     }
     nav a:hover {
       text-decoration: underline;
@@ -42,80 +55,106 @@
     }
     .logo h1 {
       margin-top: 1rem;
-      font-size: 1.8rem;
+      font-size: 2rem;
       color: #2c3e50;
     }
     .section {
       margin-bottom: 3rem;
+      background-color: #ffffffcc;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    ul {
+      padding-left: 1.5rem;
+    }
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+      .logo h1 {
+        font-size: 1.5rem;
+      }
     }
   </style>
 </head>
 <body>
-
-  <div class="logo">
-    <img src="noFilter.png" alt="Logo de Bot360">
-    <h1>Bot360 - Realidad 360 Argentina</h1>
-  </div>
-
   <nav>
     <a href="#terminos">Términos de Servicio</a>
     <a href="#privacidad">Política de Privacidad</a>
   </nav>
+  <div class="container">
+    <div class="logo">
+      <img src="noFilter.png" alt="Logo de Bot360">
+      <h1>Bot360 - Realidad 360 Argentina</h1>
+    </div>
 
-  <h1 id="terminos">Bot360 - Términos de Servicio</h1>
-  <p><strong>Última actualización:</strong> 27 de marzo de 2025</p>
-  <div class="section">
-    <h2>1. Aceptación de los Términos</h2>
-    <p>Al utilizar Bot360, aceptás estos Términos. Si no estás de acuerdo, no debés utilizar el bot.</p>
-  </div>
-  <div class="section">
-    <h2>2. Uso previsto</h2>
-    <p>Bot360 está destinado exclusivamente al uso interno del personal de <strong>Realidad 360 Argentina</strong>. Su uso fuera de este entorno debe ser aprobado expresamente por los responsables del desarrollo.</p>
-  </div>
-  <div class="section">
-    <h2>3. Datos recopilados</h2>
-    <p>Bot360 puede recopilar información como ID de usuarios, mensajes, registros de actividad y configuraciones necesarias para su funcionamiento. Más detalles en la Política de Privacidad.</p>
-  </div>
-  <div class="section">
-    <h2>4. Disponibilidad y soporte</h2>
-    <p>El bot puede estar sujeto a mantenimiento o interrupciones. No garantizamos disponibilidad continua. Para soporte, contactanos a través del servidor interno o al correo <strong>tinoquig360@gmail.com</strong>.</p>
-  </div>
-  <div class="section">
-    <h2>5. Modificaciones</h2>
-    <p>Nos reservamos el derecho de modificar estos Términos en cualquier momento. Cualquier cambio será comunicado al equipo correspondiente.</p>
-  </div>
+    <h1 id="terminos">Bot360 - Términos de Servicio</h1>
+    <p><strong>Última actualización:</strong> 27 de marzo de 2025</p>
 
-  <h1 id="privacidad">Bot360 - Política de Privacidad</h1>
-  <p><strong>Última actualización:</strong> 27 de marzo de 2025</p>
-  <div class="section">
-    <h2>1. Qué datos recopilamos</h2>
-    <ul>
-      <li>IDs de usuarios, servidores, canales y roles.</li>
-      <li>Mensajes si el bot debe analizarlos para funciones específicas.</li>
-      <li>Configuraciones personalizadas y comandos utilizados.</li>
-    </ul>
-  </div>
-  <div class="section">
-    <h2>2. Uso de los datos</h2>
-    <p>Los datos se utilizan exclusivamente para el funcionamiento del bot, incluyendo:</p>
-    <ul>
-      <li>Automatización de tareas.</li>
-      <li>Registro de acciones.</li>
-      <li>Notificaciones y recordatorios.</li>
-    </ul>
-    <p>No se utilizan con fines comerciales ni se comparten con terceros.</p>
-  </div>
-  <div class="section">
-    <h2>3. Almacenamiento y seguridad</h2>
-    <p>Los datos se almacenan en servidores seguros y solo son accesibles por el personal autorizado de <strong>Realidad 360 Argentina</strong>.</p>
-  </div>
-  <div class="section">
-    <h2>4. Solicitudes de eliminación</h2>
-    <p>Cualquier usuario que desee que su información sea eliminada puede enviar una solicitud a <strong>tinoquig360@gmail.com</strong>.</p>
-  </div>
-  <div class="section">
-    <h2>5. Cambios en esta política</h2>
-    <p>Podemos actualizar esta política en cualquier momento. Se notificará al personal a través de los canales internos de comunicación.</p>
+    <div class="section">
+      <h2>1. Aceptación de los Términos</h2>
+      <p>Al utilizar Bot360, aceptás estos Términos. Si no estás de acuerdo, no debés utilizar el bot.</p>
+    </div>
+
+    <div class="section">
+      <h2>2. Uso previsto</h2>
+      <p>Bot360 está destinado exclusivamente al uso interno del personal de <strong>Realidad 360 Argentina</strong>. Su uso fuera de este entorno debe ser aprobado expresamente por los responsables del desarrollo.</p>
+    </div>
+
+    <div class="section">
+      <h2>3. Datos recopilados</h2>
+      <p>Bot360 puede recopilar información como ID de usuarios, mensajes, registros de actividad y configuraciones necesarias para su funcionamiento. Más detalles en la Política de Privacidad.</p>
+    </div>
+
+    <div class="section">
+      <h2>4. Disponibilidad y soporte</h2>
+      <p>El bot puede estar sujeto a mantenimiento o interrupciones. No garantizamos disponibilidad continua. Para soporte, contactanos a través del servidor interno o al correo <strong>tinoquig360@gmail.com</strong>.</p>
+    </div>
+
+    <div class="section">
+      <h2>5. Modificaciones</h2>
+      <p>Nos reservamos el derecho de modificar estos Términos en cualquier momento. Cualquier cambio será comunicado al equipo correspondiente.</p>
+    </div>
+
+    <h1 id="privacidad">Bot360 - Política de Privacidad</h1>
+    <p><strong>Última actualización:</strong> 27 de marzo de 2025</p>
+
+    <div class="section">
+      <h2>1. Qué datos recopilamos</h2>
+      <ul>
+        <li>IDs de usuarios, servidores, canales y roles.</li>
+        <li>Mensajes si el bot debe analizarlos para funciones específicas.</li>
+        <li>Configuraciones personalizadas y comandos utilizados.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>2. Uso de los datos</h2>
+      <p>Los datos se utilizan exclusivamente para el funcionamiento del bot, incluyendo:</p>
+      <ul>
+        <li>Automatización de tareas.</li>
+        <li>Registro de acciones.</li>
+        <li>Notificaciones y recordatorios.</li>
+      </ul>
+      <p>No se utilizan con fines comerciales ni se comparten con terceros.</p>
+    </div>
+
+    <div class="section">
+      <h2>3. Almacenamiento y seguridad</h2>
+      <p>Los datos se almacenan en servidores seguros y solo son accesibles por el personal autorizado de <strong>Realidad 360 Argentina</strong>.</p>
+    </div>
+
+    <div class="section">
+      <h2>4. Solicitudes de eliminación</h2>
+      <p>Cualquier usuario que desee que su información sea eliminada puede enviar una solicitud a <strong>tinoquig360@gmail.com</strong>.</p>
+    </div>
+
+    <div class="section">
+      <h2>5. Cambios en esta política</h2>
+      <p>Podemos actualizar esta política en cualquier momento. Se notificará al personal a través de los canales internos de comunicación.</p>
+    </div>
   </div>
 </body>
 </html>
