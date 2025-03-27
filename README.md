@@ -10,7 +10,7 @@ Bot360 es un bot diseñado para usos internos y laborales dentro de los servidor
 
 Podés ver los documentos publicados en este enlace:
 
-👉 https://tusuario.github.io/bot360-legal/
+👉 https://midets.github.io/bot360-legal/
 
 ## 📬 Contacto
 
